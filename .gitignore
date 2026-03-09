@@ -1,0 +1,16 @@
+# python
+__pycache__/
+*.pyc
+
+# virtual env
+venv/
+.env
+
+# PyCharm
+.idea/
+
+# node
+node_modules/
+
+# 기타
+structure.txt
