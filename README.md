@@ -19,18 +19,14 @@ Backend는 FastAPI, Frontend는 Svelte를 사용합니다.
 ## 프로젝트 구조
 ```
 jump_to_fastapi
-│
-├─ frontend
-│  ├─ src
-│  └─ public
-│
-├─ migrations
-│
-├─ main.py
-├─ database.py
-├─ models.py
-├─ requirements.txt
-├─ README.md
+├── main.py
+├── database.py
+├── models.py
+├── domain
+│   ├── answer
+│   ├── question
+│   └── user
+└── frontend
 ```
 
 ## Backend 실행 방법 (FastAPI)
