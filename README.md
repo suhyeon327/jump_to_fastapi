@@ -19,14 +19,23 @@ Backend는 FastAPI, Frontend는 Svelte를 사용합니다.
 ## 프로젝트 구조
 ```
 jump_to_fastapi
-├── main.py
-├── database.py
-├── models.py
-├── domain
-│   ├── answer
-│   ├── question
-│   └── user
-└── frontend
+├── main.py        # FastAPI 핵심 객체 app 생성, 전체 환경 설정
+├── database.py    # DB 접속 및 설정
+├── models.py      # SQLAlchemy 모델 정의
+├── domain         # 도메인별 API 구성
+│   ├─ question/
+│   │   ├─ router.py     # 질문 API 라우터
+│   │   ├─ crud.py       # 질문 CRUD 처리
+│   │   └─ schemas.py    # 질문 입출력 스펙 정의 및 검증
+│   ├─ answer/
+│   │   ├─ router.py     # 답변 API 라우터
+│   │   ├─ crud.py       # 답변 CRUD 처리
+│   │   └─ schemas.py    # 답변 입출력 스펙 정의
+│   └─ user/
+│   │   ├─ router.py     # 사용자 API 라우터
+│   │   ├─ crud.py       # 사용자 CRUD 처리
+│   │   └─ schemas.py    # 사용자 입출력 스펙 정의
+└── frontend       # Svelte 프론트엔드 소스 및 빌드
 ```
 
 ## Backend 실행 방법 (FastAPI)
