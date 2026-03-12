@@ -1,9 +1,15 @@
 # python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# database
+*.db
 
 # virtual env
 venv/
+.venv/
 .env
 
 # PyCharm
